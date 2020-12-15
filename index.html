@@ -3,74 +3,49 @@
 <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-.filterDiv {b
+body{
+background-color:#F0F0F0;
 
-  float: left;
-  background-color: white;
-  color: #ffffff;
-  width: 60%;
- 
-  text-align: center;
-  display: block;
-  margin:auto;
-  margin-top:10px;
-  display:none;
 }
+html{
+font-family: Gotham-Black;
 
-.show {
-  display: block;
+
 }
-
 .container {
   margin-top: 20px;
   overflow: hidden;
+  width:60%;
+  display:block;
+  margin:auto;
 }
 
-.btn {
-transform: skew(-15deg);
-  border: none;
-  color:#808185;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #d1d3d4;
-  cursor: pointer;
-  width:18%;
-  font-size:20px;
-  font-weight:600;
-}
 
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color:#42c1d0;
-  color: white;
-}
-* {
-  box-sizing: border-box;
-}
 
 .column {
   float: left;
-  width: 50%;
+  width: 45%;
   padding: 10px;
+  margin-top:10px;
 }
-
+.row{
+margin-top:20px;
+background-color:white;
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-h2{
+h1{
 color:black;
-
+text-align:center;
 
 }
 img{
 
 height:200px;
-float:center;
+float:right;
 
 }
 .btn2{
@@ -84,14 +59,15 @@ padding:5px;
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+.container{
+
+width:100%;
+}
   .column {
     width: 100%;
   }
-  .btn{
-  margin-top:5px;
-  width:auto;
-  }
+  
   img{
   width:100%;
   }
@@ -100,27 +76,17 @@ padding:5px;
 </head>
 <body>
 
+<div class="container" style="background-color:	;">
 
-<div id="myBtnContainer">
-<hr>
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('news')"> News</button>
-  <button class="btn" onclick="filterSelection('videos')"> Videos</button>
-  <button class="btn" onclick="filterSelection('experts')"> Experts</button>
-  <button class="btn" onclick="filterSelection('community')"> Community</button>
-  <hr>
-</div>
 
-<div class="container" style="background-color:#F0F0F0	;">
-
-<div class="filterDiv news">
  
 <div class="row" style="border:1.3px solid #dadbdc;border-radius:20px;overflow:hidden;">
-z<div class="column" style="color:#696969;text-align:left;" >
+<h1 >Common Immunization Myths
+and Misconceptions</h1>
+<div class="column" style="color:#696969;text-align:left;" >
    
-<h2 >Common Immunization Myths
-and Misconceptions</h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<h3 s>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>
 
 <h3>20th December | medisage originals</h3>
 
@@ -137,19 +103,13 @@ and Misconceptions</h2>
   </div>
 </div>
 
- 
- 
- 
- 
- 
-  </div>
-  <div class="filterDiv colors videos">
     <div class="row" style="border:1.3px solid #dadbdc;border-radius:20px;overflow:hidden;">
+        <h1 >Common Immunization Myths
+and Misconceptions</h1>
   <div class="column" style="color:#696969;text-align:left;">
    
-    <h2 >Common Immunization Myths
-and Misconceptions</h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>
 
 <h3>20th November | medisage originals</h3>
 
@@ -164,13 +124,13 @@ and Misconceptions</h2>
    
   </div>
 </div>
-</div>
-  <div class="filterDiv experts">
+
     <div class="row" style="border:1.5px solid #dadbdc;border-radius:20px;overflow:hidden;">
+     <h1 >Common Immunization Myths
+and Misconceptions</h1>
   <div class="column"style="color:#696969;text-align:left;">
-  <h2 >Common Immunization Myths
-and Misconceptions</h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+ 
+<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>
 
 <h3>20th October | medisage originals</h3>
 
@@ -185,14 +145,14 @@ and Misconceptions</h2>
    
   </div>
 </div>
-</div>
-  <div class="filterDiv community">
+
     <div class="row" style="border:1.5px solid #dadbdc;border-radius:20px;overflow:hidden;">
+    <h1 >Common Immunization Myths
+and Misconceptions</h1>
   <div class="column" style="color:#696969;text-align:left;">
    
-<h2 >Common Immunization Myths
-and Misconceptions</h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpatUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</h3>
 
 <h3>20th june | medisage originals</h3>
 
@@ -207,53 +167,8 @@ and Misconceptions</h2>
    
   </div>
 </div></div>
- 
-</div>
 
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);    
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
 
 </body>
 </html>
